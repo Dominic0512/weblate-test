@@ -8,6 +8,6 @@
     }
   }
 
-  echo _i('hello world', 'zh_TW');
+  echo _i('hello world!', 'zh_TW');
   echo _i('how are you?', 'en');
 ?>
