@@ -3,12 +3,12 @@ name: make-main-pot
 on:
   push:
     branches:
-      - main
+      - i18n-weblate
     paths:
       - "src/**/*"
   pull_request:
     branches:
-      - main
+      - i18n-weblate
     paths:
       - "src/**/*"
 
