@@ -1,15 +1,15 @@
 #: src/index.php:11
 msgid "hello world!"
-msgstr ""
+msgstr "안녕하세요 세계"
 
 #: src/index.php:12
 msgid "how are you?"
-msgstr ""
+msgstr "어떻게 지내세요"
 
 #: src/index.php:13
 msgid "test 8"
-msgstr ""
+msgstr "테스트 8"
 
 #: src/index.php:14
 msgid "demo 1"
-msgstr ""
+msgstr "데모 1"
