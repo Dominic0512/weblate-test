@@ -3,23 +3,29 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 13:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-07-06 14:46+0000\n"
+"Last-Translator: admin <admin@imweb.me>\n"
+"Language-Team: English <http://translate.corp.imlocal.me/projects/"
+"weblate-test/main/en/>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.7.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13.1\n"
 
 #: src/index.php:11
 msgid "hello world!"
-msgstr ""
+msgstr "hello world"
 
 #: src/index.php:12
 msgid "how are you?"
-msgstr ""
+msgstr "how are you"
 
 #: src/index.php:13
 msgid "test 1"
 msgstr ""
+
+#: src/index.php:13
+msgid "test 8"
+msgstr "keep testing"
