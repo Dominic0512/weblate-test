@@ -9,3 +9,7 @@ msgstr ""
 #: src/index.php:13
 msgid "test 8"
 msgstr ""
+
+#: src/index.php:14
+msgid "demo 1"
+msgstr ""
