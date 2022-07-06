@@ -92,7 +92,7 @@ jobs:
   update:
     name: Creating an intermediate language file DEV
     runs-on: ubuntu-latest
-    needs: [verify]
+    needs: [verify, php]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
