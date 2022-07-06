@@ -7,5 +7,5 @@ msgid "how are you?"
 msgstr ""
 
 #: src/index.php:13
-msgid "test 1"
+msgid "test 2"
 msgstr ""
