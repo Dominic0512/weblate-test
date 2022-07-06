@@ -21,7 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       php-localize-file-update: ${{ steps.php_changed.outputs.isChanged }}
-      js-localize-file-update: ${{ steps.js_changed.outputs.isChanged }}
     steps:
       - name: Install gettext module
         run: sudo apt-get install -y gettext
@@ -29,7 +28,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.head_ref }}
+            fetch-depth: 2
+      - run: git checkout HEAD^
 
       # PHP
       - name: Generate main-php.pot file
@@ -77,7 +77,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.head_ref }}
+            fetch-depth: 2
+      - run: git checkout HEAD^
 
       - name: POT Merge
         run: |
