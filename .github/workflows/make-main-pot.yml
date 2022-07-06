@@ -1,36 +1,116 @@
-# This is a basic workflow to help you get started with Actions
+name: make-main-pot
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+    paths:
+      - "src/**/*"
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+    paths:
+      - "src/**/*"
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+permissions:
+  contents: write
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  verify:
+    name: Check for translation file updates
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    outputs:
+      php-localize-file-update: ${{ steps.php_changed.outputs.isChanged }}
+      js-localize-file-update: ${{ steps.js_changed.outputs.isChanged }}
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - name: Install gettext module
+        run: sudo apt-get install -y gettext
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      # PHP
+      - name: Generate main-php.pot file
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          find src -type f \( -name '*.php' \)  -print > list
+          xgettext --files-from=list --keyword=_i --language=PHP --from-code=UTF-8 -o locale/common/main/main-php.pot
+
+      - name: Remove pot metadata
+        run: sed -i '1,19d' locale/common/main/main-php.pot
+
+      - name: Verify main-php.pot changed
+        uses: tj-actions/verify-changed-files@v9.2
+        id: php_changed_files
+        with:
+          files: |
+            locale/common/main/main-php.pot
+          token: ${{ secrets.GH_TOKEN }}
+          autocrlf: input
+          separator: " "
+
+      - name: Run step only when files change.
+        id: php_changed
+        if: steps.php_changed_files.outputs.files_changed == 'true'
+        run: |
+          echo "Changed files: ${{ steps.php_changed_files.outputs.changed_files }}"
+          echo "::set-output name=isChanged::true"
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        if: steps.php_changed_files.outputs.files_changed == 'true'
+        with:
+          commit_message: make main.pot file
+          file_pattern: locale/common/main/main-php.pot
+
+  php:
+    name: PHP POT file generate
+    runs-on: ubuntu-latest
+    needs: [verify]
+    if: needs.verify.outputs.php-localize-file-update == 'true'
+
+    steps:
+      - name: Install gettext module
+        run: sudo apt-get install -y gettext
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Generate main.pot file
+        run: |
+          find html/main -type f \( -name '*.php' \)  -print > list
+          xgettext --files-from=list --keyword=_i --language=PHP --from-code=UTF-8 -o locale/common/main/main-php.pot
+
+      - name: POT Merge
+        run: |
+          msgcat locale/common/main/main-php.pot > locale/common/main/main.pot
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: make main.pot file
+          file_pattern: locale/common/main/main.pot
+
+  update:
+    name: Creating an intermediate language file DEV
+    runs-on: ubuntu-latest
+    needs: [verify]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: POT Merge
+        run: |
+          rm locale/common/main/main.po
+          cp locale/common/main/main.pot locale/common/main/main.po
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: update dev i18n
+          file_pattern: locale/common/main/main.po
