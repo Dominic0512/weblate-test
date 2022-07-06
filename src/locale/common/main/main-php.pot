@@ -5,3 +5,7 @@ msgstr ""
 #: src/index.php:12
 msgid "how are you?"
 msgstr ""
+
+#: src/index.php:13
+msgid "test 1"
+msgstr ""
