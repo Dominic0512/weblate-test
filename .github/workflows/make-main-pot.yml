@@ -81,7 +81,7 @@ jobs:
 
       - name: Generate main.pot file
         run: |
-          find html/main -type f \( -name '*.php' \)  -print > list
+          find src -type f \( -name '*.php' \)  -print > list
           xgettext --files-from=list --keyword=_i --language=PHP --from-code=UTF-8 -o src/locale/common/main/main-php.pot
 
       - name: POT Merge
