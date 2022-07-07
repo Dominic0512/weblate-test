@@ -28,4 +28,4 @@ msgstr "測試 八"
 #: src/index.php:31
 #, fuzzy
 msgid "demo 4"
-msgstr "展示 三"
+msgstr "展示 四"
