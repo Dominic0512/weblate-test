@@ -13,3 +13,7 @@ msgstr ""
 #: src/index.php:31
 msgid "demo 4"
 msgstr ""
+
+#: src/index.php:32
+msgid "let me show you"
+msgstr ""
