@@ -1,15 +1,15 @@
-#: src/index.php:14
+#: src/index.php:28
 msgid "hello world"
 msgstr ""
 
-#: src/index.php:15
+#: src/index.php:29
 msgid "how are you"
 msgstr ""
 
-#: src/index.php:16
+#: src/index.php:30
 msgid "test 8"
 msgstr ""
 
-#: src/index.php:17
+#: src/index.php:31
 msgid "demo 3"
 msgstr ""
