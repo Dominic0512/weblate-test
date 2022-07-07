@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 13:58+0000\n"
-"PO-Revision-Date: 2022-07-07 07:46+0000\n"
+"PO-Revision-Date: 2022-07-07 10:04+0000\n"
 "Last-Translator: admin <admin@imweb.me>\n"
 "Language-Team: English <http://translate.corp.imlocal.me/projects/"
 "weblate-test/main/en/>\n"
@@ -49,3 +49,7 @@ msgstr "demo 3"
 #: src/index.php:31
 msgid "demo 4"
 msgstr "demo four"
+
+#: src/index.php:32
+msgid "let me show you"
+msgstr "let me show you "
