@@ -24,7 +24,7 @@ services:
       platform: linux/arm64/v8
       working_dir: /app/src
       volumes:
-        - ./src:/app/src
+        - .:/app
         - ./deployment/nginx.conf:/etc/nginx/conf.d/default.conf
       ports:
         - "${NGINX_PORT:-8888}:80"
@@ -59,7 +59,7 @@ services:
       depends_on:
         - mysql
       volumes:
-        - ./src:/app/src
+        - .:/app
         - ./deployment/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
       restart: unless-stopped
       networks:

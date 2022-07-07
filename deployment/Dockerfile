@@ -25,6 +25,14 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) iconv bcmath \
     && docker-php-ext-install -j$(nproc) gd
 
+# Install gettext
+RUN apt-get update && apt-get install -y gettext \
+    && docker-php-ext-configure gettext \
+    && docker-php-ext-install gettext
+
+RUN apt-get update && apt-get install -y locales locales-all \
+  && locale-gen en_US.UTF-8 ko_KR.UTF-8 zh_TW.UTF-8 
+
 RUN apt-get install -y zlib1g-dev libicu-dev g++ libzip-dev git && \
     docker-php-ext-configure intl && \
     docker-php-ext-install intl zip sockets && \
