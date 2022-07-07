@@ -103,10 +103,10 @@ jobs:
 
       - name: POT Merge
         run: |
-          msgmerge -U locale/common/main/main.po locale/common/main/main.pot 
+          msgmerge -U locale/common/main/intermediate.po locale/common/main/main.pot 
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: update intermediate language file for dev
-          file_pattern: locale/common/main/main.po
+          file_pattern: locale/common/main/intermediate.po
