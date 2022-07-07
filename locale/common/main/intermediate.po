@@ -32,4 +32,4 @@ msgstr "展示 四"
 
 #: src/index.php:32
 msgid "let me show you"
-msgstr ""
+msgstr "讓我展示給你看"
