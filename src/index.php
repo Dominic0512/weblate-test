@@ -28,5 +28,5 @@
   echo _('hello world') . '</br>';
   echo _('how are you') . '</br>';
   echo _('test 8') . '</br>';
-  echo _('demo 3') . '</br>';
+  echo _('demo 4') . '</br>';
 ?>
