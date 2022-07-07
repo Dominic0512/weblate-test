@@ -1,4 +1,4 @@
-name: make-main-pot
+name: make-locale-mo
 
 on:
   push:
