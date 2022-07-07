@@ -34,17 +34,17 @@ jobs:
       - name: Generate main-php.pot file
         run: |
           find src -type f \( -name '*.php' \)  -print > list
-          xgettext --files-from=list --keyword=_i --language=PHP --from-code=UTF-8 -o src/locale/common/main/main-php.pot
+          xgettext --files-from=list --keyword=_i --language=PHP --from-code=UTF-8 -o locale/common/main/main-php.pot
 
       - name: Remove pot metadata
-        run: sed -i '1,19d' src/locale/common/main/main-php.pot
+        run: sed -i '1,19d' locale/common/main/main-php.pot
 
       - name: Verify main-php.pot changed
         uses: tj-actions/verify-changed-files@v9.2
         id: php_changed_files
         with:
           files: |
-            src/locale/common/main/main-php.pot
+            locale/common/main/main-php.pot
           token: ${{ secrets.GH_TOKEN }}
           autocrlf: input
           separator: " "
@@ -61,7 +61,7 @@ jobs:
         if: steps.php_changed_files.outputs.files_changed == 'true'
         with:
           commit_message: make main-php.pot file
-          file_pattern: src/locale/common/main/main-php.pot
+          file_pattern: locale/common/main/main-php.pot
 
   php:
     name: PHP POT file generate
@@ -80,19 +80,22 @@ jobs:
 
       - name: POT Merge
         run: |
-          msgcat src/locale/common/main/main-php.pot > src/locale/common/main/main.pot
+          msgcat locale/common/main/main-php.pot > locale/common/main/main.pot
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: make main.pot file
-          file_pattern: src/locale/common/main/main.pot
+          file_pattern: locale/common/main/main.pot
 
   update:
     name: Creating an intermediate language file DEV
     runs-on: ubuntu-latest
     needs: [verify, php]
     steps:
+      - name: Install pot2po module
+        run: sudo apt-get install -y translate-toolkit
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -100,11 +103,10 @@ jobs:
 
       - name: POT Merge
         run: |
-          rm src/locale/common/main/main.po
-          cp src/locale/common/main/main.pot src/locale/common/main/main.po
+          pot2po locale/common/main/main.pot locale/common/main/main.po
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: update dev i18n
-          file_pattern: src/locale/common/main/main.po
+          file_pattern: locale/common/main/main.po
