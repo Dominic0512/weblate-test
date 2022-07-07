@@ -30,7 +30,7 @@ jobs:
 
       - name: Convert mo files from po files
         run: |
-          find -name \*.po -not -path "./common/*" -execdir msgfmt main.po -o main.mo \;
+          find -name \*.po -not -path "./locale/common/*" -execdir msgfmt main.po -o main.mo \;
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
