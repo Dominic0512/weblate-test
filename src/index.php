@@ -14,5 +14,5 @@
   echo _i('hello world', $lang_code) . '</br>';
   echo _i('how are you', $lang_code) . '</br>';
   echo _i('test 8', $lang_code) . '</br>';
-  echo _i('demo 2', $lang_code) . '</br>';
+  echo _i('demo 3', $lang_code) . '</br>';
 ?>
