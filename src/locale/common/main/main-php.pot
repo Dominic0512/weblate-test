@@ -11,5 +11,5 @@ msgid "test 8"
 msgstr ""
 
 #: src/index.php:17
-msgid "demo 1"
+msgid "demo 2"
 msgstr ""
