@@ -93,8 +93,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [verify, php]
     steps:
-      - name: Install pot2po module
-        run: sudo apt-get install -y translate-toolkit
+      - name: Install gettext module
+        run: sudo apt-get install -y gettext
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -103,10 +103,10 @@ jobs:
 
       - name: POT Merge
         run: |
-          pot2po locale/common/main/main.pot locale/common/main/main.po
+          msgmerge -U locale/common/main/main.po locale/common/main/main.pot 
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: update dev i18n
+          commit_message: update intermediate language file for dev
           file_pattern: locale/common/main/main.po
