@@ -21,14 +21,18 @@ msgstr "這是weblate展示測試"
 msgid "Current language code is"
 msgstr "目前的語言代碼為"
 
-#: src/index.php:31
+#: src/index.php:30
 msgid "Hi Lisa, Ashley!"
 msgstr "哈囉 麗莎, 艾雪莉"
 
-#: src/index.php:34
+#: src/index.php:31
 msgid "Let get start it."
 msgstr "讓我們開始吧"
 
-#: src/index.php:37
+#: src/index.php:32
 msgid "aloha"
 msgstr "哈囉哈"
+
+#: src/index.php:33
+msgid "test 7"
+msgstr ""
