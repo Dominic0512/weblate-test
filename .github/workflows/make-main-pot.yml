@@ -3,12 +3,12 @@ name: make-main-pot
 on:
   push:
     branches:
-      - main
+      - i18n-weblate
     paths:
       - "src/**/*"
   pull_request:
     branches:
-      - main
+      - i18n-weblate
     paths:
       - "src/**/*"
 
@@ -16,12 +16,11 @@ permissions:
   contents: write
 
 jobs:
-  verify:
+  php-pot-file:
     name: Check for translation file updates
     runs-on: ubuntu-latest
     outputs:
       php-localize-file-update: ${{ steps.php_changed.outputs.isChanged }}
-      js-localize-file-update: ${{ steps.js_changed.outputs.isChanged }}
     steps:
       - name: Install gettext module
         run: sudo apt-get install -y gettext
@@ -29,23 +28,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.head_ref }}
+          ref: i18n-weblate
 
-      # PHP
       - name: Generate main-php.pot file
         run: |
           find src -type f \( -name '*.php' \)  -print > list
-          xgettext --files-from=list --keyword=_i --language=PHP --from-code=UTF-8 -o src/locale/common/main/main-php.pot
+          xgettext --files-from=list --keyword=_i --language=PHP --from-code=UTF-8 -o locale/common/main/main-php.pot
 
       - name: Remove pot metadata
-        run: sed -i '1,19d' src/locale/common/main/main-php.pot
+        run: sed -i '1,19d' locale/common/main/main-php.pot
 
       - name: Verify main-php.pot changed
         uses: tj-actions/verify-changed-files@v9.2
         id: php_changed_files
         with:
           files: |
-            src/locale/common/main/main-php.pot
+            locale/common/main/main-php.pot
           token: ${{ secrets.GH_TOKEN }}
           autocrlf: input
           separator: " "
@@ -61,14 +59,14 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         if: steps.php_changed_files.outputs.files_changed == 'true'
         with:
-          commit_message: make main.pot file
-          file_pattern: src/locale/common/main/main-php.pot
+          commit_message: make main-php.pot file
+          file_pattern: locale/common/main/main-php.pot
 
-  php:
-    name: PHP POT file generate
+  main-pot-file:
+    name: Aggregate multiple pot files
     runs-on: ubuntu-latest
-    needs: [verify]
-    if: needs.verify.outputs.php-localize-file-update == 'true'
+    needs: [php-pot-file]
+    if: needs.php-pot-file.outputs.php-localize-file-update == 'true'
 
     steps:
       - name: Install gettext module
@@ -77,40 +75,38 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.head_ref }}
-
-      - name: Generate main.pot file
-        run: |
-          find html/main -type f \( -name '*.php' \)  -print > list
-          xgettext --files-from=list --keyword=_i --language=PHP --from-code=UTF-8 -o src/locale/common/main/main-php.pot
+          ref: i18n-weblate
 
       - name: POT Merge
         run: |
-          msgcat src/locale/common/main/main-php.pot > src/locale/common/main/main.pot
+          msgcat locale/common/main/main-php.pot > locale/common/main/main.pot
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: make main.pot file
-          file_pattern: src/locale/common/main/main.pot
+          file_pattern: locale/common/main/main.pot
 
-  update:
-    name: Creating an intermediate language file DEV
+  intermediate-files:
+    name: Upsert intermediate language file for dev
     runs-on: ubuntu-latest
-    needs: [verify]
+    needs: [php-pot-file, main-pot-file]
     steps:
+      - name: Install gettext module
+        run: sudo apt-get install -y gettext
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.head_ref }}
+          ref: i18n-weblate
 
-      - name: POT Merge
+      - name: Merge latest template file to intermediate file
         run: |
-          rm src/locale/common/main/main.po
-          cp src/locale/common/main/main.pot src/locale/common/main/main.po
+          msgmerge -U locale/common/main/intermediate.po locale/common/main/main.pot 
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: update dev i18n
-          file_pattern: src/locale/common/main/main.po
+          commit_message: update intermediate language file for dev
+          file_pattern: locale/common/main/intermediate.po
+ 

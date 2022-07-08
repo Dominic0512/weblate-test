@@ -1,0 +1,38 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-07 02:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
+
+#: src/index.php:27
+msgid "This is weblate demo test"
+msgstr "這是weblate展示測試"
+
+#: src/index.php:28
+msgid "Current language code is"
+msgstr "目前的語言代碼為"
+
+#: src/index.php:30
+msgid "Hi Lisa, Ashley!"
+msgstr "哈囉 麗莎, 艾雪莉"
+
+#: src/index.php:31
+msgid "Let get start it."
+msgstr "讓我們開始吧"
+
+#: src/index.php:32
+msgid "aloha"
+msgstr "哈囉哈"
+
+#: src/index.php:33
+msgid "test 8"
+msgstr "測試 ba"

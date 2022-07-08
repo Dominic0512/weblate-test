@@ -1,7 +1,0 @@
-#: src/index.php:11
-msgid "hello world!"
-msgstr ""
-
-#: src/index.php:12
-msgid "how are you?"
-msgstr ""

@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-06 15:24+0000\n"
+"PO-Revision-Date: 2022-07-07 05:05+0000\n"
+"Last-Translator: admin <admin@imweb.me>\n"
+"Language-Team: Korean <http://translate.corp.imlocal.me/projects/"
+"weblate-test/main/ko/>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13.1\n"
+
+#: src/index.php:11
+msgid "hello world!"
+msgstr ""
+
+#: src/index.php:12
+msgid "how are you?"
+msgstr ""
+
+#: src/index.php:13
+msgid "test 8"
+msgstr ""
+
+#: src/index.php:15
+msgid "how are you"
+msgstr "하이루"

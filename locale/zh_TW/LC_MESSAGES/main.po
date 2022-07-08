@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-06 15:17+0000\n"
+"PO-Revision-Date: 2022-07-08 01:46+0000\n"
+"Last-Translator: admin <admin@imweb.me>\n"
+"Language-Team: Chinese (Traditional) <http://translate.corp.imlocal.me/"
+"projects/weblate-test/main/zh_Hant/>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13.1\n"
+
+#: src/index.php:11
+msgid "hello world!"
+msgstr "哈囉 世界"
+
+#: src/index.php:12
+msgid "how are you?"
+msgstr "你好嗎"
+
+#: src/index.php:13
+msgid "test 8"
+msgstr "持續測試中"
+
+#: src/index.php:14
+msgid "hello world"
+msgstr "哈囉 世界"
+
+#: src/index.php:15
+msgid "how are you"
+msgstr "你好嗎"
+
+#: src/index.php:17
+msgid "demo 3"
+msgstr "展示 三"
+
+#: src/index.php:31
+msgid "demo 4"
+msgstr "展示 四"
+
+#: src/index.php:32
+msgid "let me show you"
+msgstr "讓我表演給你看啦 "
+
+#: src/index.php:27
+msgid "This is weblate demo test"
+msgstr "這是weblate的展示測試"
