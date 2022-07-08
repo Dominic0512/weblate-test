@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 jobs:
-  verify:
+  php-pot-file:
     name: Check for translation file updates
     runs-on: ubuntu-latest
     outputs:
@@ -30,7 +30,6 @@ jobs:
         with:
           ref: i18n-weblate
 
-      # PHP
       - name: Generate main-php.pot file
         run: |
           find src -type f \( -name '*.php' \)  -print > list
@@ -63,8 +62,8 @@ jobs:
           commit_message: make main-php.pot file
           file_pattern: locale/common/main/main-php.pot
 
-  php:
-    name: PHP POT file generate
+  main-pot-file:
+    name: Aggregate multiple pot files
     runs-on: ubuntu-latest
     needs: [verify]
     if: needs.verify.outputs.php-localize-file-update == 'true'
@@ -87,4 +86,27 @@ jobs:
         with:
           commit_message: make main.pot file
           file_pattern: locale/common/main/main.pot
+
+  intermediate-files:
+    name: Upsert intermediate language file for dev
+    runs-on: ubuntu-latest
+    needs: [verify, php]
+    steps:
+      - name: Install gettext module
+        run: sudo apt-get install -y gettext
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: i18n-weblate
+
+      - name: Merge latest template file to intermediate file
+        run: |
+          msgmerge -U locale/common/main/intermediate.po locale/common/main/main.pot 
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: update intermediate language file for dev
+          file_pattern: locale/common/main/intermediate.po
  
