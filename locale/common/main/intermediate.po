@@ -13,23 +13,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 2.5.0\n"
 
+#: src/index.php:27
+msgid "This is weblate demo test"
+msgstr ""
+
 #: src/index.php:28
-msgid "hello world"
-msgstr "哈囉 世界"
-
-#: src/index.php:29
-msgid "how are you"
-msgstr "你好嗎"
-
-#: src/index.php:30
-msgid "test 8"
-msgstr "測試 八"
+msgid "Current language code is"
+msgstr ""
 
 #: src/index.php:31
-#, fuzzy
-msgid "demo 4"
-msgstr "展示 四"
+msgid "Hi Lisa, Ashley!"
+msgstr ""
 
-#: src/index.php:32
-msgid "let me show you"
-msgstr "讓我展示給你看"
+#: src/index.php:34
+msgid "Let get start it."
+msgstr ""
+
+#~ msgid "hello world"
+#~ msgstr "哈囉 世界"
+
+#~ msgid "how are you"
+#~ msgstr "你好嗎"
+
+#~ msgid "test 8"
+#~ msgstr "測試 八"
+
+#, fuzzy
+#~ msgid "demo 4"
+#~ msgstr "展示 四"
+
+#~ msgid "let me show you"
+#~ msgstr "讓我展示給你看"
