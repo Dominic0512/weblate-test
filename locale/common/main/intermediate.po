@@ -28,3 +28,7 @@ msgstr "哈囉 麗莎, 艾雪莉"
 #: src/index.php:34
 msgid "Let get start it."
 msgstr "讓我們開始吧"
+
+#: src/index.php:37
+msgid "aloha"
+msgstr ""
