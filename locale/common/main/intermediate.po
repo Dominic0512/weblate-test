@@ -35,4 +35,4 @@ msgstr "哈囉哈"
 
 #: src/index.php:33
 msgid "test 8"
-msgstr "測試 八"
+msgstr "測試八"
