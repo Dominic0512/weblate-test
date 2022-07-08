@@ -33,6 +33,9 @@
     <p>
       <?=_('Let get start it.') ?>
     </p>
+    <p>
+      <?=_('aloha') ?>
+    </p>
   </body>
 </html>
 
