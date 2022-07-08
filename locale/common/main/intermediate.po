@@ -15,32 +15,16 @@ msgstr ""
 
 #: src/index.php:27
 msgid "This is weblate demo test"
-msgstr ""
+msgstr "這是weblate展示測試"
 
 #: src/index.php:28
 msgid "Current language code is"
-msgstr ""
+msgstr "目前的語言代碼為"
 
 #: src/index.php:31
 msgid "Hi Lisa, Ashley!"
-msgstr ""
+msgstr "哈囉 麗莎, 艾雪莉"
 
 #: src/index.php:34
 msgid "Let get start it."
-msgstr ""
-
-#~ msgid "hello world"
-#~ msgstr "哈囉 世界"
-
-#~ msgid "how are you"
-#~ msgstr "你好嗎"
-
-#~ msgid "test 8"
-#~ msgstr "測試 八"
-
-#, fuzzy
-#~ msgid "demo 4"
-#~ msgstr "展示 四"
-
-#~ msgid "let me show you"
-#~ msgstr "讓我展示給你看"
+msgstr "讓我們開始吧"
