@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 15:17+0000\n"
-"PO-Revision-Date: 2022-07-07 10:06+0000\n"
+"PO-Revision-Date: 2022-07-08 01:46+0000\n"
 "Last-Translator: admin <admin@imweb.me>\n"
 "Language-Team: Chinese (Traditional) <http://translate.corp.imlocal.me/"
 "projects/weblate-test/main/zh_Hant/>\n"
@@ -45,3 +45,7 @@ msgstr "展示 四"
 #: src/index.php:32
 msgid "let me show you"
 msgstr "讓我表演給你看啦 "
+
+#: src/index.php:27
+msgid "This is weblate demo test"
+msgstr "這是weblate的展示測試"
