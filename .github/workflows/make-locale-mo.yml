@@ -6,11 +6,13 @@ on:
       - i18n-weblate
     paths:
       - "locale/**/*.po"
+      - "!local/common/*"
   pull_request:
     branches:
       - i18n-weblate
     paths:
       - "locale/**/*.po"
+      - "!local/common/*"
 
 permissions:
   contents: write
