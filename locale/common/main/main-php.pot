@@ -6,14 +6,18 @@ msgstr ""
 msgid "Current language code is"
 msgstr ""
 
-#: src/index.php:31
+#: src/index.php:30
 msgid "Hi Lisa, Ashley!"
 msgstr ""
 
-#: src/index.php:34
+#: src/index.php:31
 msgid "Let get start it."
 msgstr ""
 
-#: src/index.php:37
+#: src/index.php:32
 msgid "aloha"
+msgstr ""
+
+#: src/index.php:33
+msgid "test 1"
 msgstr ""
