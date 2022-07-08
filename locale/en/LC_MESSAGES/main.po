@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 13:58+0000\n"
-"PO-Revision-Date: 2022-07-07 10:04+0000\n"
+"PO-Revision-Date: 2022-07-08 01:42+0000\n"
 "Last-Translator: admin <admin@imweb.me>\n"
 "Language-Team: English <http://translate.corp.imlocal.me/projects/"
 "weblate-test/main/en/>\n"
@@ -53,3 +53,19 @@ msgstr "demo four"
 #: src/index.php:32
 msgid "let me show you"
 msgstr "let me show you "
+
+#: src/index.php:27
+msgid "This is weblate demo test"
+msgstr "[EN] This is weblate demo test"
+
+#: src/index.php:28
+msgid "Current language code is"
+msgstr "[EN] Current language code is"
+
+#: src/index.php:31
+msgid "Hi Lisa, Ashley!"
+msgstr "[EN] Hi Lisa, Ashley!"
+
+#: src/index.php:34
+msgid "Let get start it."
+msgstr "[EN] Let get start it"
