@@ -5,12 +5,12 @@ on:
     branches:
       - i18n-weblate
     paths:
-      - "locale/common/*.pot"
+      - "locale/common/**/*.pot"
   pull_request:
     branches:
       - i18n-weblate
     paths:
-      - "locale/common/*.pot"
+      - "locale/common/**/*.pot"
 
 permissions:
   contents: write
