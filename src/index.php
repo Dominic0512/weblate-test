@@ -16,18 +16,35 @@
   }
 
   $local_path =  '/app/locale';
-  echo $local_path . '</br>';
-
   setlocale(LC_ALL, $locale);
   bindtextdomain('main', $local_path);
   textdomain('main');
-
-  // echo phpInfo();
-  
-  echo 'Current Lang Code is: ' . $lang_code . '</br>';
-  echo _('hello world') . '</br>';
-  echo _('how are you') . '</br>';
-  echo _('test 8') . '</br>';
-  echo _('demo 4') . '</br>';
-  echo _('let me show you') . '</br>';
 ?>
+
+<html>
+  <head></head>
+  <body class="main">
+    <h1><?=_('This is weblate demo test')?></h1>
+    <h3><?=_('Current language code is') . ' [' . $lang_code . ']'?></h3>
+    <hr/>
+    <p>
+      <?=_('Hi Lisa, Ashley!') ?>
+    </p>
+    <p>
+      <?=_('Let get start it.') ?>
+    </p>
+  </body>
+</html>
+
+<style>
+  .main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+  }
+</style>
