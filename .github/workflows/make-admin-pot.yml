@@ -107,6 +107,9 @@ jobs:
         with:
           ref: i18n-weblate
 
+      - name: Touch intermediate file if not exists
+        run: touch locale/${{env.scope}}/common/intermediate.po
+
       - name: Merge latest template file to intermediate file
         run: |
           msgmerge -U locale/${{env.scope}}/common/intermediate.po locale/${{env.scope}}/common/main.pot 
