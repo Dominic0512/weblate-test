@@ -1,7 +1,7 @@
-#: src/admin/index.php:3
+#: src/admin/index.php:26
 msgid "This is admin section"
-msgstr "這是管理部分"
+msgstr ""
 
-#: src/admin/index.php:4
+#: src/admin/index.php:27
 msgid "Admin test 1"
-msgstr "管理測試一"
+msgstr ""
