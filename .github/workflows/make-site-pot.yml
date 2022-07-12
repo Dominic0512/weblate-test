@@ -33,6 +33,10 @@ jobs:
         with:
           ref: i18n-weblate
 
+      - name: Create locale folder by scope
+        run: |
+          mkdir -p locale/${{env.scope}}/common/
+
       - name: Generate php.pot file
         run: |
           find src/${{env.scope}} -type f \( -name '*.php' \)  -print > list
