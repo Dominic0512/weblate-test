@@ -14,10 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.13.1\n"
 
-#: src/index.php:13
-msgid "test 8"
-msgstr "持續測試中"
-
 #: src/index.php:17
 msgid "demo 3"
 msgstr "展示 三"
