@@ -1,22 +1,22 @@
 name: make-site-pot
 
-env:
-  scope: site
-
 on:
   push:
     branches:
       - i18n-weblate
     paths:
-      - "src/${{env.scope}}/*"
+      - "src/site/**"
   pull_request:
     branches:
       - i18n-weblate
     paths:
-      - "src/${{env.scope}}/*"
+      - "src/site/**"
 
 permissions:
   contents: write
+
+env:
+  scope: site
 
 jobs:
   php-pot-file:

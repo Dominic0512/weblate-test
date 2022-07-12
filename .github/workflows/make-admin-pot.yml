@@ -1,22 +1,22 @@
 name: make-admin-pot
 
-env:
-  scope: admin
-
 on:
   push:
     branches:
       - i18n-weblate
     paths:
-      - "src/${{env.scope}}/**/*"
+      - "src/admin/**"
   pull_request:
     branches:
       - i18n-weblate
     paths:
-      - "src/${{env.scope}}/**/*"
+      - "src/admin/**"
 
 permissions:
   contents: write
+
+env:
+  scope: admin
 
 jobs:
   php-pot-file:
