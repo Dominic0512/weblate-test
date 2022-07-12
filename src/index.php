@@ -23,19 +23,36 @@
 
 <html>
   <head></head>
-  <body class="main">
+  <body class="main-container">
     <h1><?=_('This is weblate demo test')?></h1>
-    <h3><?=_('Current language code is') . ' [' . $lang_code . ']'?></h3>
+    <h2><?=_('Current language code is') . ' [' . $lang_code . ']'?></h2>
     <hr/>
-    <p><?=_('Hi Lisa, Ashley!') ?></p>
-    <p><?=_('Let get start it.') ?></p>
-    <p><?=_('aloha') ?></p>
-    <p><?=_('add-ons testing') ?></p>
+
+    <div class="section-container">
+      <div class="section">
+        <? include('./main/index.php') ?>
+      </div>
+      <div class="section">
+        <? include('./admin/index.php') ?>
+      </div>
+      <div class="section">
+        <? include('./site/index.php') ?>
+      </div>
+    </div>
+   
   </body>
 </html>
 
 <style>
-  .main {
+  hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color: black;
+    height: 1px;
+  }
+  .main-container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -45,4 +62,14 @@
     margin: auto;
     text-align: center;
   }
+
+  .section-container {
+    width: 100vw;
+    display: flex;
+  }
+
+  .section {
+    flex-grow: 1;
+  }
+
 </style>
