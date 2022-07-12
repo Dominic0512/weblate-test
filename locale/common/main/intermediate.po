@@ -35,7 +35,7 @@ msgstr "哈囉哈"
 
 #: src/index.php:33
 msgid "add-ons testing"
-msgstr ""
+msgstr "擴充套件測試"
 
 #~ msgid "test 8"
 #~ msgstr "測試 ba"
