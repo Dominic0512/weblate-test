@@ -14,10 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.13.1\n"
 
-#: src/index.php:11
-msgid "hello world!"
-msgstr "哈囉 世界"
-
 #: src/index.php:12
 msgid "how are you?"
 msgstr "你好嗎"
@@ -26,10 +22,6 @@ msgstr "你好嗎"
 msgid "test 8"
 msgstr "持續測試中"
 
-#: src/index.php:14
-msgid "hello world"
-msgstr "哈囉 世界"
-
 #: src/index.php:15
 msgid "how are you"
 msgstr "你好嗎"
@@ -37,10 +29,6 @@ msgstr "你好嗎"
 #: src/index.php:17
 msgid "demo 3"
 msgstr "展示 三"
-
-#: src/index.php:31
-msgid "demo 4"
-msgstr "展示 四"
 
 #: src/index.php:32
 msgid "let me show you"
