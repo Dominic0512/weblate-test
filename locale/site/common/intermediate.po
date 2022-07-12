@@ -1,7 +1,7 @@
 #: src/site/index.php:3
 msgid "This is site section"
-msgstr ""
+msgstr "這是網站部分"
 
 #: src/site/index.php:4
 msgid "Site test 3"
-msgstr ""
+msgstr "網站測試三"
