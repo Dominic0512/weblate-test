@@ -31,7 +31,7 @@ msgstr "讓我們開始吧"
 
 #: src/index.php:32
 msgid "aloha"
-msgstr "哈囉哈"
+msgstr "啊囉哈"
 
 #: src/index.php:33
 msgid "add-ons testing"
