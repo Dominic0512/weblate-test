@@ -5,8 +5,8 @@ msgstr ""
 "POT-Creation-Date: 2022-07-06 13:58+0000\n"
 "PO-Revision-Date: 2022-07-08 04:49+0000\n"
 "Last-Translator: admin <admin@imweb.me>\n"
-"Language-Team: English <http://translate.corp.imlocal.me/projects/"
-"weblate-test/main/en/>\n"
+"Language-Team: English <http://translate.corp.imlocal.me/projects/weblate-"
+"test/main/en/>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,14 +22,18 @@ msgstr "[EN] This is weblate demo test"
 msgid "Current language code is"
 msgstr "[EN] Current language code is"
 
-#: src/index.php:31
+#: src/index.php:30
 msgid "Hi Lisa, Ashley!"
 msgstr "[EN] Hi Lisa, Ashley!"
 
-#: src/index.php:34
+#: src/index.php:31
 msgid "Let get start it."
 msgstr "[EN] Let get start it"
 
-#: src/index.php:37
+#: src/index.php:32
 msgid "aloha"
 msgstr "[EN] aloha"
+
+#: src/index.php:33
+msgid "add-ons testing"
+msgstr ""
