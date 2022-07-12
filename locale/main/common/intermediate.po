@@ -13,11 +13,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 2.5.0\n"
 
-#: src/main/index.php:3
+#: src/main/index.php:26
 msgid "This is main section"
 msgstr "這是主要的部分"
 
-#: src/main/index.php:4
+#: src/main/index.php:27
 msgid "Main test 4"
 msgstr "主要部分測試四"
-
