@@ -14,10 +14,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.13.1\n"
 
-#: src/admin/index.php:3
 msgid "This is admin section"
 msgstr "這是管理區塊"
 
-#: src/admin/index.php:4
 msgid "Admin test 1"
 msgstr "管理測試一"
