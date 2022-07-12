@@ -1,7 +1,7 @@
-#: src/main/index.php:3
+#: src/main/index.php:26
 msgid "This is main section"
 msgstr ""
 
-#: src/main/index.php:4
+#: src/main/index.php:27
 msgid "Main test 4"
 msgstr ""
