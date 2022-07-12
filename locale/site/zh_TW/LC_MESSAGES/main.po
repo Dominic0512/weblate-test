@@ -14,10 +14,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.13.1\n"
 
-#: src/site/index.php:3
 msgid "This is site section"
 msgstr "test"
 
-#: src/site/index.php:4
 msgid "Site test 3"
 msgstr "test"
