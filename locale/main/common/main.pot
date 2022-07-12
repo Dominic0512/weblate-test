@@ -1,23 +1,7 @@
-#: src/index.php:27
-msgid "This is weblate demo test"
+#: src/main/index.php:3
+msgid "This is main section"
 msgstr ""
 
-#: src/index.php:28
-msgid "Current language code is"
-msgstr ""
-
-#: src/index.php:30
-msgid "Hi Lisa, Ashley!"
-msgstr ""
-
-#: src/index.php:31
-msgid "Let get start it."
-msgstr ""
-
-#: src/index.php:32
-msgid "aloha"
-msgstr ""
-
-#: src/index.php:33
-msgid "add-ons testing"
+#: src/main/index.php:4
+msgid "Main test 4"
 msgstr ""
