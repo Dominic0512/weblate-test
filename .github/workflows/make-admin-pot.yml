@@ -1,7 +1,7 @@
-name: make-main-pot
+name: make-admin-pot
 
 env:
-  scope: main
+  scope: admin
 
 on:
   push:
