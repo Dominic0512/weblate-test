@@ -14,20 +14,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.13.1\n"
 
-msgid "This is weblate demo test"
-msgstr "這是weblate的展示測試"
-
-msgid "Current language code is"
+msgid "This is main section"
 msgstr ""
 
-msgid "Hi Lisa, Ashley!"
+msgid "Main test 4"
 msgstr ""
 
-msgid "Let get start it."
-msgstr ""
-
-msgid "aloha"
-msgstr ""
-
-msgid "add-ons testing"
-msgstr ""
+#~ msgid "This is weblate demo test"
+#~ msgstr "這是weblate的展示測試"
