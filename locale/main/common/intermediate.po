@@ -15,11 +15,11 @@ msgstr ""
 
 #: src/main/index.php:3
 msgid "This is main section"
-msgstr ""
+msgstr "這是主要的部分"
 
 #: src/main/index.php:4
 msgid "Main test 4"
-msgstr ""
+msgstr "主要部分測試四"
 
 #~ msgid "This is weblate demo test"
 #~ msgstr "這是weblate展示測試"
