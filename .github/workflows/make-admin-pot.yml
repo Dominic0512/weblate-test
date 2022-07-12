@@ -32,6 +32,10 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: i18n-weblate
+      
+      - name: Create locale folder by scope
+        run: |
+          mkdir -p locale/${{env.scope}}/common/
 
       - name: Generate php.pot file
         run: |
