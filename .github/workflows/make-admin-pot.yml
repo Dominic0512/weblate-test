@@ -35,7 +35,7 @@ jobs:
 
       - name: Generate php.pot file
         run: |
-          find src -type f \( -name '*.php' \)  -print > list
+          find src/${{env.scope}} -type f \( -name '*.php' \)  -print > list
           xgettext --files-from=list --keyword=_i --language=PHP --from-code=UTF-8 -o locale/${{env.scope}}/common/php.pot
 
       - name: Remove pot metadata
