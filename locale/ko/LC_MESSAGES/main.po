@@ -14,14 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.13.1\n"
 
-#: src/index.php:12
-msgid "how are you?"
-msgstr ""
-
 #: src/index.php:13
 msgid "test 8"
 msgstr ""
-
-#: src/index.php:15
-msgid "how are you"
-msgstr "하이루"
