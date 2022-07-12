@@ -5,8 +5,8 @@ msgstr ""
 "POT-Creation-Date: 2022-07-12 10:16+0000\n"
 "PO-Revision-Date: 2022-07-12 14:15+0000\n"
 "Last-Translator: admin <admin@imweb.me>\n"
-"Language-Team: English <http://translate.corp.imlocal.me/projects/"
-"weblate-test/admin/en/>\n"
+"Language-Team: English <http://translate.corp.imlocal.me/projects/weblate-"
+"test/admin/en/>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,10 +14,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.13.1\n"
 
-#: src/admin/index.php:3
 msgid "This is admin section"
 msgstr "[EN] This is admin section."
 
-#: src/admin/index.php:4
 msgid "Admin test 1"
 msgstr "[EN] Admin test 1."
