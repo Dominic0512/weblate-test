@@ -1,0 +1,7 @@
+#: src/site/index.php:3
+msgid "This is site section"
+msgstr ""
+
+#: src/site/index.php:4
+msgid "Site test 2"
+msgstr ""
