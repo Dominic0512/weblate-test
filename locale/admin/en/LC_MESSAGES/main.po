@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-12 10:16+0000\n"
-"PO-Revision-Date: 2022-07-12 10:20+0000\n"
+"PO-Revision-Date: 2022-07-12 14:15+0000\n"
 "Last-Translator: admin <admin@imweb.me>\n"
 "Language-Team: English <http://translate.corp.imlocal.me/projects/"
 "weblate-test/admin/en/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 
 #: src/admin/index.php:3
 msgid "This is admin section"
-msgstr "[EN] This is admin section"
+msgstr "[EN] This is admin section."
 
 #: src/admin/index.php:4
 msgid "Admin test 1"
-msgstr "[EN] Admin test 1"
+msgstr "[EN] Admin test 1."
