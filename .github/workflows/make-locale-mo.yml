@@ -3,13 +3,13 @@ name: make-locale-mo
 on:
   push:
     branches:
-      - i18n-weblate
+      - i18n-weblate-bk
     paths:
       - "locale/**/*.po"
       - "!locale/common/**"
   pull_request:
     branches:
-      - i18n-weblate
+      - i18n-weblate-bk
     paths:
       - "locale/**/*.po"
       - "!locale/common/**"
