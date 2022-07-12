@@ -8,12 +8,12 @@ on:
     branches:
       - i18n-weblate
     paths:
-      - "src/${{env.scope}}/**"
+      - "src/main/**"
   pull_request:
     branches:
       - i18n-weblate
     paths:
-      - "src/${{env.scope}}/**"
+      - "src/main/**"
 
 permissions:
   contents: write
