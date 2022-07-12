@@ -1,8 +1,5 @@
 name: make-main-pot
 
-env:
-  scope: "main"
-
 on:
   push:
     branches:
@@ -17,6 +14,9 @@ on:
 
 permissions:
   contents: write
+
+env:
+  scope: "main"
 
 jobs:
   php-pot-file:
