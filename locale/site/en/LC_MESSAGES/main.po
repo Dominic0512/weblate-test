@@ -12,10 +12,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.7.1\n"
 
-#: src/site/index.php:3
 msgid "This is site section"
 msgstr ""
 
-#: src/site/index.php:4
 msgid "Site test 3"
 msgstr ""
