@@ -1,0 +1,7 @@
+#: src/admin/index.php:3
+msgid "This is admin section"
+msgstr ""
+
+#: src/admin/index.php:4
+msgid "Admin test 1"
+msgstr ""
