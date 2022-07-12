@@ -1,19 +1,19 @@
 name: make-main-pot
 
 env:
-  scope: main
+  scope: "main"
 
 on:
   push:
     branches:
       - i18n-weblate
     paths:
-      - "src/${{env.scope}}/*"
+      - "src/${{env.scope}}/**"
   pull_request:
     branches:
       - i18n-weblate
     paths:
-      - "src/${{env.scope}}/*"
+      - "src/${{env.scope}}/**"
 
 permissions:
   contents: write
