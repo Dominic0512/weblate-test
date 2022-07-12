@@ -21,23 +21,3 @@ msgstr "這是主要的部分"
 msgid "Main test 4"
 msgstr "主要部分測試四"
 
-#~ msgid "This is weblate demo test"
-#~ msgstr "這是weblate展示測試"
-
-#~ msgid "Current language code is"
-#~ msgstr "目前的語言代碼為"
-
-#~ msgid "Hi Lisa, Ashley!"
-#~ msgstr "哈囉 麗莎, 艾雪莉"
-
-#~ msgid "Let get start it."
-#~ msgstr "讓我們開始吧"
-
-#~ msgid "aloha"
-#~ msgstr "啊囉哈"
-
-#~ msgid "add-ons testing"
-#~ msgstr "擴充套件測試"
-
-#~ msgid "test 8"
-#~ msgstr "測試 ba"

@@ -20,5 +20,3 @@ msgstr ""
 msgid "Main test 4"
 msgstr ""
 
-#~ msgid "This is weblate demo test"
-#~ msgstr "這是weblate的展示測試"
