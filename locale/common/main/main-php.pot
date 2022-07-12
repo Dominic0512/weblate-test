@@ -19,5 +19,5 @@ msgid "aloha"
 msgstr ""
 
 #: src/index.php:33
-msgid "test 8"
+msgid "add-ons testing"
 msgstr ""
