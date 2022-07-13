@@ -23,6 +23,3 @@ msgstr ""
 
 msgid "This is admin section"
 msgstr "[EN] This is admin section"
-
-msgid "Admin parallel test 4"
-msgstr ""
