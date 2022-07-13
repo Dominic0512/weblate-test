@@ -27,6 +27,7 @@ jobs:
         with:
           ref: i18n-weblate
       - name: Wait on tests
+        uses: ./
         with:
           ref: ${{ github.sha }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
