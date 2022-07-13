@@ -1,7 +1,15 @@
-#: src/site/index.php:26
-msgid "This is site section"
-msgstr "這是網站部分"
-
 #: src/site/index.php:27
+msgid "This is weblate demo test"
+msgstr ""
+
+#: src/site/index.php:28
+msgid "Current language code is"
+msgstr ""
+
+#: src/site/index.php:32
+msgid "This is site section"
+msgstr ""
+
+#: src/site/index.php:33
 msgid "Site test 3"
-msgstr "網站測試三"
+msgstr ""
