@@ -49,7 +49,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: changed-files-artifact
-          path: locale/${{matrix.scope}}/common/php.pot
+          path: ./locale
 
       # - name: Verify php.pot changed
       #   uses: tj-actions/verify-changed-files@v9.2
@@ -101,7 +101,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: changed-files-artifact
-          path: locale/${{matrix.scope}}/common/main.pot
+          path: ./locale
 
       # - name: Commit changes
       #   uses: stefanzweifel/git-auto-commit-action@v4
@@ -136,7 +136,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: changed-files-artifact
-          path: locale/${{matrix.scope}}/common/intermediate.po
+          path: ./locale
 
       # - name: Commit changes
       #   uses: stefanzweifel/git-auto-commit-action@v4
@@ -161,10 +161,10 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
         working-directory: ./
+        
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
-        if: steps.php_changed_files.outputs.files_changed == 'true'
         with:
           commit_message: make pot and intermediate files
-          file_pattern: locale/**
+          file_pattern: ./locale/**
  
