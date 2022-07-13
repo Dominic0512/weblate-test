@@ -154,23 +154,32 @@ jobs:
         with:
           ref: i18n-weblate
 
-      - name: Download latest locale folder
-        uses: actions/download-artifact@v3
+      # - name: Download latest locale folder
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: changed-files-artifact
+      #     path: ./locale
+   
+      # - name: Get changed files
+      #   uses: jitterbit/get-changed-files@v1
+      #   id: modified-files
+      # - run: |
+      #     for changed_file in ${{ steps.modified-files.outputs.all }}; do
+      #       echo "Do something with this ${changed_file}."
+      #     done
+
+      - uses: actions/download-artifact@v3
         with:
           name: changed-files-artifact
-          path: ./locale
-   
-      - name: Get changed files
-        uses: jitterbit/get-changed-files@v1
-        id: modified-files
-      - run: |
-          for changed_file in ${{ steps.modified-files.outputs.all }}; do
-            echo "Do something with this ${changed_file}."
-          done
-        
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: make pot and intermediate files
-          file_pattern: ./locale
+          path: path/to/artifact
+          
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: path/to/artifact 
+              
+      # - name: Commit changes
+      #   uses: stefanzweifel/git-auto-commit-action@v4
+      #   with:
+      #     commit_message: make pot and intermediate files
+      #     file_pattern: ./locale
  
