@@ -30,7 +30,7 @@
     <div>
       <h3>Site</h3>
       <?=_('This is site section')?>
-      <?=_('Site parallel test 6')?>
+      <?=_('Site parallel test 7')?>
     </div>
   </body>
 </html>
