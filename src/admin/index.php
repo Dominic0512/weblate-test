@@ -30,7 +30,7 @@
     <div>
       <h3>Admin</h3>
       <?=_('This is admin section')?>
-      <?=_('Admin parallel test 5')?>
+      <?=_('Admin parallel test 6')?>
     </div>
   </body>
 </html>
