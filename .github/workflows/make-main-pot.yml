@@ -154,10 +154,11 @@ jobs:
         with:
           ref: i18n-weblate
 
-      - uses: actions/download-artifact@v3
+      - name: Download latest locale folder
+        uses: actions/download-artifact@v3
         with:
           name: changed-files-artifact
-          path: locale
+          path: ./locale
    
       - name: Get changed files
         id: changed-files
