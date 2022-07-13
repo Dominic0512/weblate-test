@@ -1,5 +1,5 @@
 #: src/site/index.php:27
-msgid "This is weblate demo test"
+msgid "This is site Weblate demo test"
 msgstr ""
 
 #: src/site/index.php:28
