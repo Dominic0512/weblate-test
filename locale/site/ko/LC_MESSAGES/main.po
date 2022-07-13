@@ -12,6 +12,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.7.1\n"
 
+msgid "This is weblate demo test"
+msgstr ""
+
+msgid "Current language code is"
+msgstr ""
+
 msgid "This is site section"
 msgstr ""
 
