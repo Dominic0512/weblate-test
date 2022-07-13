@@ -14,10 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.13.1\n"
 
-#, fuzzy
-msgid "This is site Weblate demo test"
-msgstr "test"
-
 msgid "Current language code is"
 msgstr ""
 
