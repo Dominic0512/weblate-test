@@ -23,6 +23,3 @@ msgstr ""
 
 msgid "This is admin section"
 msgstr "這是管理區塊"
-
-msgid "Admin parallel test 4"
-msgstr ""

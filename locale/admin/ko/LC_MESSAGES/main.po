@@ -20,6 +20,3 @@ msgstr ""
 
 msgid "This is admin section"
 msgstr ""
-
-msgid "Admin parallel test 4"
-msgstr ""
