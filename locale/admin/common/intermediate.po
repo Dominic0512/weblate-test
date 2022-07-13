@@ -1,5 +1,4 @@
 #: src/admin/index.php:27
-#, fuzzy
 msgid "This is admin Weblate demo test"
 msgstr ""
 
@@ -12,6 +11,5 @@ msgid "This is admin section"
 msgstr ""
 
 #: src/admin/index.php:33
-#, fuzzy
-msgid "Admin test 3"
+msgid "Admin parallel test 4"
 msgstr ""
