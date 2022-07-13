@@ -19,9 +19,25 @@ env:
   scope: "main"
 
 jobs:
+  wait-for-workflow-check-regexp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: i18n-weblate
+      - name: Wait on tests
+        with:
+          ref: ${{ github.sha }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          running-workflow-name: wait-for-workflow-check-regexp
+          check-regexp: .?-pot
+          wait-interval: 10
+
   php-pot-file:
     name: Check for translation file updates
     runs-on: ubuntu-latest
+    needs: [wait-for-workflow-check-regexp]
     outputs:
       php-localize-file-update: ${{ steps.php_changed.outputs.isChanged }}
     steps:
