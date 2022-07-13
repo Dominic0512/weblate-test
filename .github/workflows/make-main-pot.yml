@@ -22,8 +22,8 @@ jobs:
     strategy:
       matrix:
         scope: [main, admin, site]
-    outputs:
-      php-localize-file-update: ${{ steps.php_changed.outputs.isChanged }}
+    # outputs:
+    #   php-localize-file-update: ${{ steps.php_changed.outputs.isChanged }}
     steps:
       - name: Install gettext module
         run: sudo apt-get install -y gettext
@@ -82,7 +82,7 @@ jobs:
     strategy:
       matrix:
         scope: [main, admin, site]
-    if: needs.php-pot-file.outputs.php-localize-file-update == 'true'
+    # if: needs.php-pot-file.outputs.php-localize-file-update == 'true'
 
     steps:
       - name: Install gettext module
