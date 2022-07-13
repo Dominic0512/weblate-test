@@ -1,7 +1,15 @@
-#: src/admin/index.php:26
+#: src/admin/index.php:27
+msgid "This is weblate demo test"
+msgstr ""
+
+#: src/admin/index.php:28
+msgid "Current language code is"
+msgstr ""
+
+#: src/admin/index.php:32
 msgid "This is admin section"
 msgstr ""
 
-#: src/admin/index.php:27
-msgid "Admin test 1"
+#: src/admin/index.php:33
+msgid "Admin test 3"
 msgstr ""
