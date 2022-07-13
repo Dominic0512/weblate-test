@@ -11,5 +11,5 @@ msgid "This is admin section"
 msgstr ""
 
 #: src/admin/index.php:33
-msgid "Admin test 3"
+msgid "Admin parallel test 4"
 msgstr ""
