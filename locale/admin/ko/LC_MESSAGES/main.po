@@ -12,8 +12,5 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.7.1\n"
 
-msgid "Current language code is"
-msgstr ""
-
 msgid "This is admin section"
 msgstr ""
