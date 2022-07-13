@@ -29,10 +29,10 @@ jobs:
       - name: Wait on tests
         uses: lewagon/wait-on-check-action@v1.0.0
         with:
-          ref: ${{ github.ref }}
+          ref: i18n-weblate
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           running-workflow-name:  wait-for-other-workflows
-          check-regexp: .?-pot
+          check-regexp: .?-file
           wait-interval: 10
   php-pot-file:
     name: Check for translation file updates
@@ -110,7 +110,7 @@ jobs:
           commit_message: make main.pot file
           file_pattern: locale/${{env.scope}}/common/main.pot
 
-  intermediate-files:
+  intermediate-file:
     name: Upsert intermediate language file for dev
     runs-on: ubuntu-latest
     needs: [php-pot-file, main-pot-file]
