@@ -11,5 +11,5 @@ msgid "This is site section"
 msgstr ""
 
 #: src/site/index.php:33
-msgid "Site test 3"
+msgid "Site parallel test 4"
 msgstr ""
