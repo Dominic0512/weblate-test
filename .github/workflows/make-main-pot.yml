@@ -21,7 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        scope: [main, admin, site]
+        # scope: [main, admin, site]
+        scope: [main]
     # outputs:
     #   php-localize-file-update: ${{ steps.php_changed.outputs.isChanged }}
     steps:
@@ -81,7 +82,8 @@ jobs:
     needs: [php-pot-file]
     strategy:
       matrix:
-        scope: [main, admin, site]
+        # scope: [main, admin, site]
+        scope: [main]
     # if: needs.php-pot-file.outputs.php-localize-file-update == 'true'
 
     steps:
@@ -115,7 +117,8 @@ jobs:
     needs: [main-pot-file]
     strategy:
       matrix:
-        scope: [main, admin, site]
+        # scope: [main, admin, site]
+        scope: [main]
     steps:
       - name: Install gettext module
         run: sudo apt-get install -y gettext
