@@ -23,7 +23,3 @@ msgstr ""
 
 msgid "This is site section"
 msgstr "test"
-
-#, fuzzy
-msgid "Site parallel test 4"
-msgstr "test"

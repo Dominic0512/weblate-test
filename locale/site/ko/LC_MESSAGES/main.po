@@ -20,6 +20,3 @@ msgstr ""
 
 msgid "This is site section"
 msgstr ""
-
-msgid "Site parallel test 4"
-msgstr ""
