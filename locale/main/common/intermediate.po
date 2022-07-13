@@ -13,10 +13,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 2.5.0\n"
 
-#: src/main/index.php:26
+#: src/main/index.php:27
+msgid "This is weblate demo test"
+msgstr ""
+
+#: src/main/index.php:28
+msgid "Current language code is"
+msgstr ""
+
+#: src/main/index.php:32
 msgid "This is main section"
 msgstr "這是主要的部分"
 
-#: src/main/index.php:27
-msgid "Main test 4"
+#: src/main/index.php:33
+#, fuzzy
+msgid "Main test 3"
 msgstr "主要部分測試四"
