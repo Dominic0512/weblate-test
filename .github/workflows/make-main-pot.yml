@@ -5,12 +5,12 @@ on:
     branches:
       - i18n-weblate
     paths:
-      - "src/main/**"
+      - "src/**"
   pull_request:
     branches:
       - i18n-weblate
     paths:
-      - "src/main/**"
+      - "src/**"
 
 permissions:
   contents: write
