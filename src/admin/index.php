@@ -29,7 +29,7 @@
     <hr/>
     <div>
       <h3>Admin</h3>
-      <?=_('This is admin section 1')?>
+      <?=_('This is admin section 2')?>
       <?=_('Admin parallel test 10')?>
     </div>
   </body>
