@@ -14,8 +14,16 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.13.1\n"
 
+#, fuzzy
+msgid "This is admin Weblate demo test"
+msgstr "這是管理區塊"
+
+msgid "Current language code is"
+msgstr ""
+
 msgid "This is admin section"
 msgstr "這是管理區塊"
 
-msgid "Admin test 1"
+#, fuzzy
+msgid "Admin test 3"
 msgstr "管理測試一"
