@@ -30,7 +30,7 @@
     <div>
       <h3>Main</h3>
       <?=_('This is main section')?>
-      <?=_('Main parallel test 4')?>
+      <?=_('Main parallel test 5')?>
     </div>
   </body>
 </html>
