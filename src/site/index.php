@@ -24,7 +24,7 @@
 <html>
   <head></head>
   <body class="main-container">
-    <h1><?=_('This is weblate demo test')?></h1>
+    <h1><?=_('This is site Weblate demo test')?></h1>
     <h2><?=_('Current language code is') . ' [' . $lang_code . ']'?></h2>
     <hr/>
     <div>
