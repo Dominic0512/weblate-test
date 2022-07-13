@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 env:
-  scope: admin
+  scope: "admin"
 
 jobs:
   php-pot-file:
