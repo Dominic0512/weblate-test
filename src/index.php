@@ -30,7 +30,7 @@
     <p><?=_('Hi Lisa, Ashley!') ?></p>
     <p><?=_('Let get start it.') ?></p>
     <p><?=_('aloha') ?></p>
-    <p><?=_('test 9') ?></p>
+    <p><?=_('test 10') ?></p>
   </body>
 </html>
 
