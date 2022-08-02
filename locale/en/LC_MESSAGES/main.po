@@ -14,41 +14,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.13.1\n"
 
-#: src/index.php:11
-msgid "hello world!"
-msgstr "hello world"
-
 #: src/index.php:12
 msgid "how are you?"
 msgstr "how are you"
 
 #: src/index.php:13
-msgid "test 1"
-msgstr ""
-
-#: src/index.php:13
 msgid "test 8"
 msgstr "[EN ]testing ba"
-
-#: src/index.php:14
-msgid "hello world"
-msgstr "hello world"
 
 #: src/index.php:15
 msgid "how are you"
 msgstr "how are you"
 
 #: src/index.php:17
-msgid "demo 2"
-msgstr "demo 2"
-
-#: src/index.php:17
 msgid "demo 3"
 msgstr "demo 3"
-
-#: src/index.php:31
-msgid "demo 4"
-msgstr "demo four"
 
 #: src/index.php:32
 msgid "let me show you"
