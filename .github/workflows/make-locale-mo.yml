@@ -3,19 +3,16 @@ name: make-locale-mo
 on:
   push:
     branches:
-      - i18n-weblate
-    paths:
-      - "locale/**/*.po"
-      - "!locale/common/**"
-  pull_request:
-    branches:
-      - i18n-weblate
+      - main
     paths:
       - "locale/**/*.po"
       - "!locale/common/**"
 
 permissions:
   contents: write
+
+env:
+  TARGET_BRANCH: main
 
 jobs:
   update:
@@ -28,7 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: i18n-weblate
+          ref: ${{ env.TARGET_BRANCH }}
 
       - name: Convert mo files from po files
         run: |
