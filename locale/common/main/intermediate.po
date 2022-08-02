@@ -34,5 +34,6 @@ msgid "aloha"
 msgstr "哈囉哈"
 
 #: src/index.php:33
-msgid "test 8"
+#, fuzzy
+msgid "test 11"
 msgstr "測試 ba"
