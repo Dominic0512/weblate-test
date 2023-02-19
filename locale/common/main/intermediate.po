@@ -22,18 +22,19 @@ msgid "Current language code is"
 msgstr "目前的語言代碼為"
 
 #: src/index.php:30
-msgid "Hi Lisa, Ashley!"
-msgstr "哈囉 麗莎, 艾雪莉"
+msgid "Hi! Louis!!"
+msgstr ""
 
 #: src/index.php:31
 msgid "Let get start it."
 msgstr "讓我們開始吧"
 
-#: src/index.php:32
-msgid "aloha"
-msgstr "哈囉哈"
+#~ msgid "Hi Lisa, Ashley!"
+#~ msgstr "哈囉 麗莎, 艾雪莉"
 
-#: src/index.php:33
+#~ msgid "aloha"
+#~ msgstr "哈囉哈"
+
 #, fuzzy
-msgid "test 11"
-msgstr "測試 ba"
+#~ msgid "test 11"
+#~ msgstr "測試 ba"
