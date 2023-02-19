@@ -7,6 +7,7 @@ on:
     paths:
       - "locale/**/*.po"
       - "!locale/common/**"
+  workflow_dispatch:
 
 permissions:
   contents: write
