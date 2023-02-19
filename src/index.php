@@ -27,10 +27,8 @@
     <h1><?=_('This is weblate demo test')?></h1>
     <h3><?=_('Current language code is') . ' [' . $lang_code . ']'?></h3>
     <hr/>
-    <p><?=_('Hi Lisa, Ashley!') ?></p>
+    <p><?=_('Hi! Louis!!') ?></p>
     <p><?=_('Let get start it.') ?></p>
-    <p><?=_('aloha') ?></p>
-    <p><?=_('test 11') ?></p>
   </body>
 </html>
 
