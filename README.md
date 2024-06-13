@@ -45,4 +45,4 @@ http://localhost:8888/?lang=kr
 http://localhost:8888/?lang=tw
 ```
 
-test 1
+test 2
